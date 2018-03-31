@@ -2,18 +2,38 @@
     width:150px;
     border-radius:50%;
     border:1px solid;
+    animation: imgBack 4s infinite;
 }
 .center-div{
     margin-left:calc( 50% - 75px);
     width: 150px;
 }
 .heading{
-    animation-name: head;
-    animation-duration: infinite;
+    animation:head 4s infinite;
 }
 @keyframes head{
     0%{color:red;}
     30%{color:yellow}
     60%{color:blue}
-    100%{color:grey}
+    90%{color:grey}
+    100%{color:black}
+    
+}
+@keyframes imgBack{
+    0%{background-color: rebeccapurple;
+        transform: rotate(0deg);
+    }
+    30%{background-color: white;
+        transform: rotate(120deg);        
+    }
+    60% {
+      background-color: rebeccapurple;
+        transform: rotate(180deg);        
+    }
+    90%{background-color: white;
+       transform: rotate(280deg);  
+    }
+    100%{background-color: rebeccapurple;
+        transform: rotate(360deg);
+    }
 }
