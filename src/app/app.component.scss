@@ -1,0 +1,19 @@
+.img-round{
+    width:150px;
+    border-radius:50%;
+    border:1px solid;
+}
+.center-div{
+    margin-left:calc( 50% - 75px);
+    width: 150px;
+}
+.heading{
+    animation-name: head;
+    animation-duration: infinite;
+}
+@keyframes head{
+    0%{color:red;}
+    30%{color:yellow}
+    60%{color:blue}
+    100%{color:grey}
+}
