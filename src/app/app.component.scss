@@ -2,7 +2,10 @@
     width:150px;
     border-radius:50%;
     border:1px solid;
-    animation: imgBack 4s infinite;
+    &:hover{
+        animation: imgBack 4s infinite;
+        cursor:pointer;
+    }
 }
 .center-div{
     margin-left:calc( 50% - 75px);
